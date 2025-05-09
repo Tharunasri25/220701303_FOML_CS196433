@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Face Analyzer & Skin Advisor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="container">
+    <h1>🧠 Face Analyzer & 💡 Skin Advisor</h1>
+
+    <form id="uploadForm">
+      <input type="file" name="file" accept="image/*" required />
+      <button type="submit">Analyze Face</button>
+    </form>
+
+    <!-- Image preview -->
+    <div id="imagePreviewContainer" style="margin-top: 20px;">
+      <img id="imagePreview" src="" alt="Uploaded Image" style="max-width: 100%; height: auto; display: none; border: 2px solid #ccc; padding: 5px;" />
+    </div>
+
+    <div id="result"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
